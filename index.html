@@ -12,12 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
 
-    <header class="menu__border-line">
+    <header class="border-line">
         <div class="container menu ">
             <a class="menu__logo " href="index.html">Web
                 <span class="menu__logo-black">Studio</span>
@@ -76,8 +76,8 @@
 
         </section>
 
-        <div class="our-list__main-center">
-            <ul class="our-list container">
+        <div class="our-list">
+            <ul class="our-list__main-center container">
                 <li class="our-list__frame">
                     <div class="our-list__svg-icons">
                         <svg width="70" height="70">
@@ -438,8 +438,8 @@
 
                 <div class="newsletter">
                     <h3>zapisz sie do newslettera</h3>
-                    <div class="imput-section">
-                        <input class="input-email" type="email" name="email" id="user_email" placeholder="E-mail" />
+                    <div class="newsletter__imput-section">
+                        <input class="newsletter__input-email" type="email" name="email" id="user_email" placeholder="E-mail" />
                         <button type="submit">
                             <span>Zapisz się</span>
 
@@ -455,74 +455,74 @@
 
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-btn" data-modal-close>
-                <svg class="close-icon">
+        <div class="backdrop__modal-container">
+            <button class="backdrop__close-btn" data-modal-close>
+                <svg class="backdrop__close-icon">
                     <use href="./img/icons.svg#icon-Vector"></use>
                 </svg>
             </button>
             <div>
-                <h2 class="modal-header">
+                <h2 class="backdrop__modal-header">
                     Zostaw swoje dane w formularzu poniżej
                 </h2>
 
                 <form>
-                    <div class="modal-forms-flex">
+                    <div class="modal">
 
-                        <label class="modal-label" for="user-name">Imię
-                            <span class="input-container">
+                        <label class="modal__label" for="user-name">Imię
+                            <span class="modal__input-container">
 
-                                <svg class="modal-icon">
+                                <svg class="modal__icon">
                                     <use href="./img/icons.svg#icon-Vector-3"></use>
                                 </svg>
 
-                                <input class="modal-input" type="text" id="user-name" name="user-name" />
+                                <input class="modal__input" type="text" id="user-name" name="user-name" />
                             </span>
                         </label>
 
-                        <label class="modal-label" for="user-phone">Telefon
-                            <span class="input-container">
+                        <label class="modal__label" for="user-phone">Telefon
+                            <span class="modal__input-container">
 
-                                <svg class="modal-icon">
+                                <svg class="modal__icon">
                                     <use href="./img/icons.svg#icon-Vector-4"></use>
                                 </svg>
 
-                                <input class="modal-input" type="tel" id="user-phone" name="user-phone" />
+                                <input class="modal__input" type="tel" id="user-phone" name="user-phone" />
                             </span>
                         </label>
 
-                        <label class="modal-label" for="user-email">Email
-                            <span class="input-container">
+                        <label class="modal__label" for="user-email">Email
+                            <span class="modal__input-container">
 
-                                <svg class="modal-icon">
+                                <svg class="modal__icon">
                                     <use href="./img/icons.svg#icon-Vector-5"></use>
                                 </svg>
 
-                                <input class="modal-input" type="text" id="user-email" name="user-email" />
+                                <input class="modal__input" type="text" id="user-email" name="user-email" />
                             </span>
                         </label>
 
-                        <label for="comment" class="modal-label">Komentarz
-                            <textarea name="user-comment" id="comment" class="modal-textarea"
+                        <label for="comment" class="modal__label">Komentarz
+                            <textarea name="user-comment" id="comment" class="modal__textarea"
                                 placeholder="Wprowadź tekst"></textarea>
                         </label>
                     </div>
 
-                    <div class="checkbox-container">
-                        <label for="checkbox" class="checkbox-label" />
+                    <div class="checkbox">
+                        <label for="checkbox" class="checkbox__label" />
                        
-                            <input id="checkbox" type="checkbox" class="checkbox-input" name="regulations-acceptance"
+                            <input id="checkbox" type="checkbox" class="checkbox__input" name="regulations-acceptance"
                                 required />
 
-                            <svg class="checkbox-svg ">
+                            <svg class="checkbox__svg ">
                                 <use href="./img/icons.svg#icon-Vector-7"></use>
                             </svg>
 
-                            <svg class=" icon-check">
+                            <svg class=" checkbox__icon-check">
                                 <use href="./img/icons.svg#icon-Vector-6"></use>
                             </svg>
                         
-                        <span class="statement">Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                        <span class="checkbox__statement">Oświadczam iż akceptuję <a href="#">Regulamin</a> i
                             <a href="#">Politykę Prywatności</a>.
                         </span>
 
