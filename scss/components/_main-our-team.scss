@@ -59,7 +59,7 @@
 	list-style: none;
 	fill: var(--blight-gray);
 
-	& li {
+	.social-links__item {
 		display: flex;
 		justify-content: center;
 		align-items: center;
